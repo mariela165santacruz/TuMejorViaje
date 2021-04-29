@@ -69,5 +69,11 @@
       height: 400px; width: 400px;
       background-color: rgb(245, 255, 109);
    }
+   .footer__link{
+    color:deeppink;
+    display: flex
+  }
   
-   
+    .footer__link:hover{
+      color: yellow;
+    }

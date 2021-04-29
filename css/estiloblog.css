@@ -100,3 +100,11 @@
    .card:nth-child(1) {
      width: 420px;
    }
+   .footer__link{
+    color:deeppink;
+    display: flex
+  }
+  
+    .footer__link:hover{
+      color: yellow;
+    }
