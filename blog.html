@@ -7,59 +7,47 @@
     <title>Viajando por Argentina a Precios Económicos</title>
     <meta name="description" content="Este es tu blog de viajes por Argentina. Una recopilación con todos los relatos y artículos prácticos de los mejores lugares del país.">
     <link rel="icon" type="image/jpeg" href="img/Iconos/icon.jpeg">
-    <link rel="stylesheet" href="css/estiloblog.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estiloCSS.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="contenedor">
-       <div class="header">
-        <img src="img/Iconos/icono.jpeg" class="header_logo">
-           <div class="header__texto">
-               <h1 class="header__titulo">
-                   TU MEJOR VIAJE
-               </h1>
-           </div>
-        </div> 
-
-        <div class="menu">
-          <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-                            <ul class="menu__row">
-                <li class="menu__list">
-                  <a href="index.html" class="menu__link">Home</a>
-                </li>
-                   <li class="menu__list">
-                     <a href="blog.html" class="menu__link">Blog</a>
-                   </li>
-                   <li class="menu__list">
-                     <a href="contact.html" class="menu__link">Contact</a>
-                   </li>
-              </ul>
-            </div>
-          </div>
-          <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </div>
-          </nav>
-        </div>
+  <div class="contenedor">
+    <div class="header">
+      <section id="navegacion">
+          <header id="masthead" class="site-header" role="banner">
+              <nav class="navbar navbarHome navbar-expand-md navbar-light bg-light fixed-top">
+                 <a class="navbar-brand" href="#">
+                       <img src="img/Iconos/icono.jpeg" width="80" alt="icono">
+                   </a>
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <div id="bs4navbar" class="collapse navbar-collapse">
+                     <ul id="menu-menu-1" class="navbar-nav ml-auto"><li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-5 nav-item active"><a href="index.html" class="nav-link active">Inicio</a></li>
+                       <li id="menu-item-724" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-724 nav-item"><a href="blog.html" class="nav-link">Experiencias</a></li>
+                       <li id="menu-item-725" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-725 nav-item"><a href="destinos.html" class="nav-link">Destinos</a></li>
+                       <li id="menu-item-1125" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1125 nav-item"><a href="quienessomos.html" class="nav-link">Quienes Somos</a></li>
+                       <li id="menu-item-131" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-131 nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
+                       <li id="menu-item-149" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-149 nav-item"><a href="https://www.facebook.com/" class="nav-link"><img src="https://rgturismo.com/wp-content/themes/av-theme/img/ico-facebook.png" width="20" style="margin-top:-5px"></a></li>
+                       <li id="menu-item-150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-150 nav-item"><a href="https://www.instagram.com/" class="nav-link"><img src="https://rgturismo.com/wp-content/themes/av-theme/img/ico-insta.png" width="20" style="margin-top:-5px"></a></li>
+                       </ul>
+                  </div>		
+              </nav>
+          </header><!-- #masthead -->
+        </section>
+      </div> 
         
         <div class="about">
             <h2 class="about__titulo">
-                BLOG DE VIAJES POR ARGENTINA
+                Blog de viajes por Argentina
             </h2>
-            <h3 class="about__parrafo">
+            <h3 class="about__parrafoblog">
                 <br>Viajando por Argentina a precios super bajos
             </h3>
-            <p class="about__parrafo">
+            <p class="about__parrafoblog">
                 Te cuento un poco de mis experiencias viajando por Argentina. Cuáles son los puntos turisticos que no te podes perder. Recomendaciones y ofertas.
             </p>
         </div>
@@ -70,7 +58,7 @@
               <div class="text">
                 <h3>Puerto Madryn</h3>
                 <p>A pesar de haber estado a punto de extinguirse debido a la caza indiscriminada, unas 3000 ballenas francas australes acuden seguras de julio a diciembre a la hermosa Península Valdés, en la costa patagónica, para desplazarse en su hábitat natural y ofrecer un espectáculo imperdible. </p>
-                <button>Here's why</button>
+                <button>Seguir leyendo</button>
               </div>
             </article>
             <article class="card">
@@ -78,7 +66,7 @@
               <div class="text">
                 <h3>Monte Fitz Roy</h3>
                 <p>Este lugar de la Patagonia se encuentra en un punto estratégico rodeado de montañas, lagos, cañones y naturaleza pura donde su mayor estrella es la Laguna de los Tres y su imponente Monte Fitz Roy.Junto al pueblo, se encuentra un sendero que te lleva a 2 miradores donde poder tener una visión panorámica de la zona.</p>
-                <button>Here's how</button>
+                <button>Seguir leyendo</button>
               </div>
             </article>
             <article class="card">
@@ -86,7 +74,7 @@
               <div class="text">
                 <h3>Glaciar Perito Moreno</h3>
                 <p>El glaciar Perito Moreno mide unos 60 metros de altura, simplemente mirarlo es ya una experiencia sobrecogedora, pero recorrerlo y sentirlo literalmente bajo tus pies es una vivencia muy superior que sólo puede definirse como sublime.  </p>
-                <button>Read more</button>
+                <button>Seguir leyendo</button>
               </div>
             </article>
             <article class="card">
@@ -94,7 +82,7 @@
               <div class="text">
                 <h3>Fitz Roy</h3>
                 <p>Se encuentra ubicado dentro de dos parques nacionales: Parque Nacional Bernardo O'Higgins y el parque nacional Los Glaciares. Esta cumbre ofrece un espectáculo imponente al asomar sus crestas y aristas entre glaciares y nubes; y en ciertos momentos del día tomar sorprendentes coloridos según la iluminación del sol.</p>
-                <button>Just do it...</button>
+                <button>Seguir leyendo</button>
               </div>
             </article>
             <article class="card">
@@ -102,7 +90,7 @@
               <div class="text">
                 <h3>Cataratas del Iguazu</h3>
                 <p>La Unesco las declaró Patrimonio Natural de la Humanidad y en 2011 fueron nominadas como una de las 7 Maravillas Naturales del Mundo; estas son razones suficientes para conocer las Cataratas de Iguazú </p>
-                <button>Here's why</button>
+                <button>Seguir leyendo</button>
               </div>
             </article>
             <article class="card">
@@ -110,34 +98,38 @@
               <div class="text">
                 <h3>Ushuaia</h3>
                 <p>La inmensidad del mundo y sus bellezas parecen pequeñas, Ushuaia es el resumen de ello, no basta con contarlo, animense y visitenla, este es el fin del mundo y el comienzo de todo. </p>
-                <button>Stop here</button>
+                <button>Seguir leyendo</button>
               </div>
             </article>
           </main>
 
-       <div class="contact">
-           <h2 class="contact__titulo">
-               CONTACT
-           </h2>
-           <p class="contact__parrafo">
-               Para cualquier consulta que necesites completa el siguiente formulario
-           </p>
-           <div class="contact__form">
-            <label for="exampleFormControlInput1" class="form-label">Email </label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Consulta o comentario</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-          <a class="btn btn-primary" href="#" role="button">ENVIAR</a>
-       </div>
-    </div>
+          <div class="contact">
+            <h2 class="contact__titulo">
+                Consultas
+            </h2>
+            <p class="contact__parrafo">
+                Para cualquier consulta que necesites completa el siguiente formulario
+            </p>
+            <div class="contact__form">
+             <label for="exampleFormControlInput1" class="form-label">Email </label>
+             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@mail.com">
+           </div>
+           <div class="mb-3">
+             <label for="exampleFormControlTextarea1" class="form-label">Consulta o comentario</label>
+             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+           </div>
+           <a class="btn btn-primary" href="#" role="button">ENVIAR</a>
+        </div>
+     </div>
 
-    <div class="footer">
-        <a href="https://www.facebook.com/" class="footer__link" target="_blank">Facebook</a>
-        <a href="https://twitter.com/"class="footer__link" target="_blank">Twitter </a>
-  </div>
+     <div class="footer">
+      <ul>
+        <li>info@tumejorviaje.com</li>
+        <li>Av. Cabildo 2872, Belgrano, CABA</li>
+        <li>+54 9 11 3986 6849</li>
+      </ul>
+</div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>

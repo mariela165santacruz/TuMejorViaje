@@ -1,0 +1,132 @@
+$color1: fondo;
+
+.contenedor{
+    background-color: #b8f7f7;
+}
+
+.header{ 
+    __logo{
+        width: 55px;
+        height: 50px;
+        display: block;}
+
+    background-color: #b8f7f7;
+    height: 50px; 
+    border-color: transparent;
+    color:black;
+    background-color:white;
+    display: flex;
+   @extend .about
+
+   
+}
+
+.menu{
+    __row{
+    @if $color1 == fondo{
+       
+        background-color:#f4ffff;
+        display: flex;}
+
+    @else{
+        background-color: rgb(250, 253, 253);
+    }}
+    __list{
+        display: inline-block;
+        font-family: 'Roboto', sans-serif; 
+        color: white;
+        font-size: small;;
+    }
+    __link{
+        list-style: none;
+        margin: auto;
+        margin-right: auto;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 2em;
+        padding-left: 1em;
+        padding-right: 1em;
+        justify-content: center;
+        color:white;
+        
+    }
+}
+
+.container-fluid{
+    display: block;
+  }
+
+.carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.about{
+    __titulo{
+    font-weight: bold;
+    font-family: 'Arvo', serif;
+    
+}
+}
+
+.blog{
+    @extend .about;  
+}
+
+
+.contact{
+    @extend .about
+}
+
+.footer{
+    .footer__link{
+        color:deeppink;
+        display: flex
+      }
+      
+      .footer__link:hover{
+          color: yellow;
+        }
+    background-color: #3a3838;
+    height: 80px; 
+}
+
+@mixin fuentes ($font , $color) {
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+p{
+    @include fuentes(bold , black )
+}
+
+.blog{
+    
+    .blog__link{
+        width: 200px;
+        height: 200px;
+        transition: height 2s, width 1s;
+        font-family: Roboto;
+        font-size: 20px;        
+     }
+     .blog__link:hover {
+        height: 400px; width: 400px;
+        background-color: rgb(245, 255, 109);
+     }
+    
+     .blog__cards {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      flex-direction: row;
+      max-height: 100vh;
+    }
+    .blog__cards img {
+      margin: 10px;
+      border: 3px solid white;
+      box-shadow: 3px 3px 8px 0px rgb(233, 227, 227); 
+      max-width: 23vw;
+    }
+}
