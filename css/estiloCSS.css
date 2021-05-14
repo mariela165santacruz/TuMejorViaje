@@ -23,7 +23,8 @@
   text-align: right;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding-top: 3rem; }
 
 .menu__row {
   background-color: #f4ffff;
@@ -94,7 +95,8 @@
   color: deeppink;
   display: flex;
   background-color: #3a3838;
-  height: 150px;
+  height: 400px;
+  padding: 2px;
   justify-content: center;
   align-items: center; }
   .footer ul {
@@ -141,7 +143,8 @@ p {
   margin: 10px;
   border: 3px solid #000;
   box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
-  max-width: 23vw; }
+  width: 50%;
+  max-width: 440px; }
 
 .contact {
   display: block;
@@ -151,19 +154,22 @@ p {
   filter: alpha(opacity=50); }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  max-width: 100%; }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
-  align-items: initial;
-  justify-content: center;
+  align-items: stretch;
   align-items: baseline;
   text-align: justify;
-  font-family: 'Ubuntu', sans-serif; }
+  justify-content: center;
+  font-family: 'Ubuntu', sans-serif;
+  max-width: 100%;
+  padding: 5px; }
 
 .card {
-  width: 350px;
+  flex: 0 0 350px;
   margin: 20px;
   border: 1px solid #ccc;
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
@@ -198,10 +204,6 @@ p {
   text-align: center;
   font-family: 'Ubuntu', sans-serif; }
 
-.card:nth-child(1) {
-  width: 420px;
-  text-align: justify; }
-
 .contenedor {
   margin: 3em auto 2em;
   position: relative;
@@ -218,11 +220,19 @@ p {
   border-radius: 5%; }
 
 .texto-encima {
+  display: block;
   position: fixed;
   top: 10px;
-  left: 10px; }
+  left: 10px;
+  max-width: 50%;
+  max-height: 50%; }
 
 .centrado {
+  font-weight: 80px;
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 20%;
+  min-width: 20%;
   padding: 2em;
   background-color: white;
   opacity: 0.82;
@@ -232,7 +242,7 @@ p {
   transform: translate(-50%, -50%);
   color: #000;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 25px; }
+  font-size: 5px; }
 
 .centrado h2 {
   font-weight: bold; }
@@ -309,42 +319,54 @@ p {
   -webkit-transform: scale(1.2);
   transform: scale(1.2); }
 
-.contenedor_destinos_img {
-  float: left;
-  display: block;
-  text-align: start;
-  margin-top: initial; }
-
-.contenedor_destinos_img {
-  width: inherit;
-  max-width: 100%;
-  height: auto;
-  opacity: 0.75;
-  border: 2px solid #ccc;
-  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-  transform: rotateX(60deg);
-  border-radius: 0%;
-  justify-content: flex-start; }
-
-.destinos_texto-encima {
-  position: fixed;
-  top: 10px;
-  left: 20px;
-  font-size: 50px; }
-
-.destinos_centrado h2 {
-  position: absolute;
-  top: 24%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 50px;
-  font-weight: bold; }
-
 .datos {
-  display: inline-block;
   justify-content: center;
+  padding: 0px;
+  margin: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
+  max-height: 200vh; }
+
+.quienessomos {
+  background-image: url(https://viajes.nationalgeographic.com.es/medio/2013/01/22/esy-003336731_1000x772.jpg);
+  height: 50vh;
+  margin-bottom: 5vh;
+  display: flex;
   align-items: center;
-  padding: 10px;
-  margin: 10px; }
+  background-size: cover;
+  background-position: center;
+  opacity: 0.82; }
+
+.quienessomos h2 {
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  font-size: 6vw;
+  font-weight: 80px;
+  text-align: center;
+  width: 100%;
+  line-height: 1;
+  font-family: 'Ubuntu', sans-serif; }
+
+.banner_destino {
+  background-image: url(https://viajes.nationalgeographic.com.es/medio/2013/01/22/351870_1000x666.jpg);
+  height: 50vh;
+  margin-bottom: 5vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.82; }
+
+.banner_destino h2 {
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  font-size: 6vw;
+  font-weight: 80px;
+  text-align: center;
+  width: 100%;
+  line-height: 1;
+  font-family: 'Ubuntu', sans-serif; }
